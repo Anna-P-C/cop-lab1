@@ -271,3 +271,56 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+/* Стилі форми фільтрів для ЛР3 */
+.filter-bar-card {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+@media (max-width: 900px) {
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.filter-group label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.form-control {
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #64748b;
+    background: rgba(15, 23, 42, 0.4);
+    color: inherit;
+    font-size: 0.95rem;
+}
+
+.theme-light .form-control {
+    background: #ffffff;
+    border-color: #cbd5e1;
+}
+
+.filter-actions {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-reset {
+    height: 38px;
+    white-space: nowrap;
+}
